@@ -2,7 +2,6 @@
 #include <iostream>
 
 using namespace std;
-
 int main() {
     cout << "test" << endl;
     // string binaryInput;
@@ -22,6 +21,7 @@ int main() {
     // // Convert binary to decimal and display the result
     // int decimalResult = binaryToDecimal(binaryInput);
     // cout << "Decimal equivalent: " << decimalResult << endl;
+
 
     return 0;
 }
