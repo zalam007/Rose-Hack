@@ -5,7 +5,7 @@
 
 //https://acm-ucr.github.io/docusaurus/docs/git-version-control/push
 
-//COMMANDS:
+//COMMANDS
 /*
 git checkout branch_name
 
