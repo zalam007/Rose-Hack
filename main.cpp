@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main{
-    cout << "hi world:)" << endl;
-    cout<<"hi2"<<endl;
+    cout << "hrlllo wotlrd" << endl;
+    
     //
     return 0;
 }
