@@ -16,6 +16,8 @@ New branch: git checkout -b branch_name
 Merge
 
 git pull
+
+UP to data!
 */
 
 
