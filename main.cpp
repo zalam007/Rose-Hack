@@ -4,6 +4,8 @@
 using namespace std;
 
 int main() {
+
+
     string binaryInput;
 
     // Get binary input from the user
@@ -17,6 +19,7 @@ int main() {
             return 1; // Exit with an error code
         }
     }
+
 
     // Convert binary to decimal and display the result
     int decimalResult = binaryToDecimal(binaryInput);
