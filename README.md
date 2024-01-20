@@ -5,7 +5,7 @@
 
 //https://acm-ucr.github.io/docusaurus/docs/git-version-control/push
 
-//COMMANDS:
+//COMMANDS
 /*
 git checkout branch_name
 
@@ -20,6 +20,8 @@ Make a change:
 Make a pull request & merge on github
 
 git pull
+
+g++ main.cpp binary.cpp -Wall -o a.out
 */
 
 
