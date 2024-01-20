@@ -7,10 +7,10 @@
 
 //PUSH & CODE:
 /*
-git checkout -b branch_name
+git checkout branch_name
 
 Make new branch:
-git checkout branch_name
+git checkout -b branch_name
 
 Make a change:
 1. git add .
