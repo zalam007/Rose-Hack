@@ -5,7 +5,9 @@
 
 using namespace std;
 
-//Converts binary to decimal
 int binaryToDecimal(const string& binary);
-
 string getBinaryInput();
+string decimalToBinary(int decimal);
+
+string binaryToHex(/*parameter*/);
+string hexToBinary(/*parameter*/);
