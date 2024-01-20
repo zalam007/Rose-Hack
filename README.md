@@ -7,10 +7,11 @@
 
 //PUSH & CODE:
 /*
-git checkout -b branch_name
+Visit a branch:
+git checkout branch_name
 
 Make new branch:
-git checkout branch_name
+git checkout -b branch_name
 
 1. git add .
 2. git commit -m "message of what you did"
