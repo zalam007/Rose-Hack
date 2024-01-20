@@ -1,8 +1,8 @@
-// #pragma once
+#pragma once
 
-// #include <string>
-// using namespace std;
+#include <string>
+using namespace std;
 
-// //Converts binary to decimal
-// int binaryToDecimal(const string& binary);
+//Converts binary to decimal
+int binaryToDecimal(const string& binary);
 
