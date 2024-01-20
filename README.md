@@ -20,6 +20,8 @@ Make a change:
 Make a pull request & merge on github
 
 git pull
+
+g++ main.cpp binary.cpp -Wall -o a.out
 */
 
 
