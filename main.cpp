@@ -13,13 +13,14 @@ int main() {
     ifstream inputFile;
     bool toggleReadFile = false;
 
+    //Menu
     while (true) 
     {
         // Print menu options
         PrintMenu();
         if (!(cin >> command) || command == "q") break; // If input fails or user chooses to quit
 
-        if (command == "1")
+        if (command == "1")    //Binary to Decimal
         {
             if(toggleReadFile) { // read binary from a file
                 cout << "Reading from file..." << endl;
@@ -39,7 +40,7 @@ int main() {
                 cout << "Decimal equivalent: " << decimalResult << "\n" << endl;
             }
         }
-        else if (command == "2")
+        else if (command == "2")    // Decimal to Binary
         {
             if(toggleReadFile) { // read decimal from a file
                 cout << "Reading from file..." << endl;
@@ -59,7 +60,7 @@ int main() {
                 cout << "Binary equivalent: " << binaryResult << "\n" << endl;
             }
         }
-        else if(command =="3")
+        else if(command =="3")    //Binary to hex
         {
             if(toggleReadFile) { // read binary from a file
                 cout << "Reading from file..." << endl;
@@ -74,7 +75,7 @@ int main() {
                 cout << binaryToHex(binaryInput) << endl;
             }
         }
-        else if(command == "4")
+        else if(command == "4")    //Hex to binary
         {
             //hex to binary
             if(toggleReadFile) { // read binary from a file
@@ -91,7 +92,7 @@ int main() {
                 //HextoBin function goes here using hexfile arguement
             }
         }
-        else if(command == "5") {
+        else if(command == "5") {    //Toggle read file
             if(toggleReadFile) {
                 toggleReadFile = false;
                 cout << "Read file toggle is now off." << endl;
@@ -116,7 +117,7 @@ int main() {
             }
             
         }
-        else if(command == "q")
+        else if(command == "q")    //Quit
         {
             break;
         }
