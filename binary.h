@@ -12,4 +12,4 @@ string getBinaryInput();
 string decimalToBinary(int decimal);
 
 string binaryToHex(/*parameter*/);
-string hexToBinary(/*parameter*/);
+string hexToBinary(const string& hex);

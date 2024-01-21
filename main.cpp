@@ -37,15 +37,19 @@ int main() {
             string binaryResult = decimalToBinary(decimalInput);
             cout << "Binary equivalent: " << binaryResult << "\n" << endl;
         }
-        else if(command =="3")
+        else if(command =="3")  //binary to hex
         {
-            //binary to hex
             break;
         }
-        else if(command =="4")
+        else if(command =="4")  //hex to binary
         {
-            //hex to binary
-            break;
+            string hex;
+            cout << "Enter a hex number: ";
+            cin >> hex;
+
+
+            string binaryResult = hexToBinary(hex);
+            cout << "Binary equivalent: " << binaryResult << endl;
         }
         else if(command == "q")
         {
