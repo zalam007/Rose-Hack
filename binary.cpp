@@ -8,6 +8,7 @@ void PrintMenu() {
     cout << "2. Convert decimal to binary\n";
     cout << "3. Convert binary to hexadecimal\n";
     cout << "4. Convert hexadecimal to binary\n";
+    cout << "5. Toggle File read\n";
     cout << "q. Quit\n";
     cout << "Enter your choice: ";
 }
@@ -34,7 +35,9 @@ string getBinaryInput() {
 
     // Get binary input from the user
     cout << "Enter a binary number: ";
-    cin >> binaryInput;
+    cin.ignore();
+    getline(cin, binaryInput);
+    binaryInput = removeWhiteSpace(binaryInput);
 
     // Validate binary input
     for (char digit : binaryInput) {
@@ -67,7 +70,35 @@ string decimalToBinary(int decimal) {
     return binary;
 }
 
-string binaryToHex(/*parameter*/);
+string removeWhiteSpace(const string& binary) {
+    string newBinary = "";
+    for(unsigned i = 0; i < binary.length(); ++i) {
+        if(binary[i] != ' ') {
+            newBinary += binary[i];
+        }
+    }
+    return newBinary;
+}
+
+string binaryToHex(const string& binary) {
+    //list all the characters in hexidecimal that a standard 4 ---- can hold (EX 1111)
+    const char arr[] = {'0','1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    string shrinkBinary = binary;
+    string hexidecimal = "";
+
+    if (binary.length() >= 4) {
+        string shrinkBinary = removeWhiteSpace(binary);
+        while (shrinkBinary.length() >= 4) {
+            // Last four binary turned to decimal and then turned to hexadecimal character.
+            hexidecimal = arr[binaryToDecimal(shrinkBinary.substr(shrinkBinary.length() - 4))] + hexidecimal;
+            // remove the last binary
+            shrinkBinary = shrinkBinary.substr(0, shrinkBinary.length() - 4);
+        }
+    }
+
+
+    return hexidecimal;
+}
 
 string hexToBinary(const string& hex) {
     // Define a map to convert each hexadecimal digit to its binary equivalent
