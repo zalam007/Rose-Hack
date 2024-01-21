@@ -99,7 +99,22 @@ string binaryToHex(const string& binary) {
     return hexidecimal;
 }
 
-//This needs to be replaced
-string hexToBinary(const string& hexadecimal){
-    return hexadecimal;
-}
+string hexToBinary(const string& hex) {
+    // Define a map to convert each hexadecimal digit to its binary equivalent
+    const unordered_map<char, string> hexToBinaryMap = {
+        {'0', "0000"}, {'1', "0001"}, {'2', "0010"}, {'3', "0011"},
+        {'4', "0100"}, {'5', "0101"}, {'6', "0110"}, {'7', "0111"},
+        {'8', "1000"}, {'9', "1001"}, {'A', "1010"}, {'B', "1011"},
+        {'C', "1100"}, {'D', "1101"}, {'E', "1110"}, {'F', "1111"}
+    };
+
+    string binaryResult = "";
+
+    // Iterate through each character in the hex string
+    for (char hexDigit : hex) {
+        // Convert the hexadecimal digit to its binary equivalent and append to the result
+        binaryResult += hexToBinaryMap.at(toupper(hexDigit));
+    }
+
+    return binaryResult;
+} 
