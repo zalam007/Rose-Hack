@@ -7,7 +7,6 @@
 
 //COMMANDS
 /*
-git checkout branch_name
 
 Make new branch:
 git checkout -b branch_name
@@ -17,11 +16,13 @@ Make a change:
 2. git commit -m "message"
 3. git push
 
-Make a pull request & merge on github
+Make a pull request on github
+merge on github
 
 git pull
 
 g++ main.cpp binary.cpp -Wall -o a.out
 */
+
 
 

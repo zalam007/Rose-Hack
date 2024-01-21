@@ -1,6 +1,16 @@
 #include "binary.h"
 #include <cmath>
 
+void PrintMenu() {
+    cout << "Menu:\n";
+    cout << "1. Convert binary to decimal\n";
+    cout << "2. Convert decimal to binary\n";
+    cout << "3. Convert binary to hexadecimal\n";
+    cout << "4. Convert hexadecimal to binary\n";
+    cout << "q. Quit\n";
+    cout << "Enter your choice: ";
+}
+
 // Converts binary number to decimal
 int binaryToDecimal(const string& binary) {
     int decimalTotal = 0;
