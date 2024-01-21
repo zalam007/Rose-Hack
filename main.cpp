@@ -1,17 +1,9 @@
 #include "binary.h"
+
 #include <iostream>
 
 using namespace std;
 
-void PrintMenu() {
-    cout << "Menu:\n";
-    cout << "1. Convert binary to decimal\n";
-    cout << "2. Convert decimal to binary\n";
-    cout << "3. Convert binary to hexidecimal\n";
-    cout << "4. Convert hexideicmal to binary\n";
-    cout << "q. Quit\n";
-    cout << "Enter your choice: ";
-}
 
 int main() {
 
@@ -32,7 +24,7 @@ int main() {
 
             // Convert binary to decimal and display the result
             int decimalResult = binaryToDecimal(binaryInput);
-            cout << "Decimal equivalent: " << decimalResult << endl;
+            cout << "Decimal equivalent: " << decimalResult << "\n" << endl;
         }
         else if (command == "2")
         {
@@ -43,7 +35,7 @@ int main() {
 
             // Convert decimal to binary and display the result
             string binaryResult = decimalToBinary(decimalInput);
-            cout << "Binary equivalent: " << binaryResult << endl;
+            cout << "Binary equivalent: " << binaryResult << "\n" << endl;
         }
         else if(command =="3")
         {
@@ -53,6 +45,10 @@ int main() {
         else if(command =="4")
         {
             //hex to binary
+            break;
+        }
+        else if(command == "q")
+        {
             break;
         }
     }
