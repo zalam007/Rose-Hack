@@ -82,14 +82,14 @@ int main() {
                 cout << "Reading from file..." << endl;
                 string hexFile;
                 while(getline(inputFile, hexFile)) {
-                    //HextoBin function goes here using hexfile arguement
+                    cout << hexToBinary(hexFile) << endl;
                 }
             }
             
             else{ // Get hexadecimal input from the user
                 string hexadecimal;
                 cin >> hexadecimal;
-                //HextoBin function goes here using hexfile arguement
+                cout << hexToBinary(hexadecimal);
             }
         }
         else if(command == "5") {    //Toggle read file
