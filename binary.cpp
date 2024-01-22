@@ -94,6 +94,12 @@ string binaryToHex(const string& binary) {
             // remove the last binary
             shrinkBinary = shrinkBinary.substr(0, shrinkBinary.length() - 4);
         }
+        if(shrinkBinary.length() >= 1) {
+            hexidecimal = arr[binaryToDecimal(shrinkBinary)] + hexidecimal;
+        }
+    }
+    else if(shrinkBinary.length() >= 1) {
+        hexidecimal = arr[binaryToDecimal(shrinkBinary)] + hexidecimal;
     }
 
 
